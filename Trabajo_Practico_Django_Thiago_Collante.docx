@@ -1,0 +1,71 @@
+
+TRABAJO PRÁCTICO N°3 – PREENTREGA DJANGO
+========================================
+
+Materia: Laboratorio de Algoritmos y Estructuras de Datos
+Alumno: Thiago Collante
+Año: 2025
+
+========================================
+
+¿Qué es Django y por qué lo usaríamos?
+--------------------------------------
+
+Django es un framework de desarrollo web de alto nivel escrito en Python que promueve el desarrollo rápido y limpio de aplicaciones web. Fue diseñado para facilitar la creación de sitios web seguros y mantenibles. Lo usaríamos porque incluye muchas funcionalidades listas para usar, como autenticación de usuarios, panel de administración, formularios, ORM, entre otras, lo cual permite concentrarse en el desarrollo de funcionalidades propias del proyecto y no en la configuración desde cero del entorno web.
+
+Cita sugerida: Django Software Foundation. (2024). Django at a glance. https://docs.djangoproject.com/en/5.2/intro/overview/
+
+¿Qué es el patrón MTV (Model-Template-View) en Django? Compará MTV con MVC.
+--------------------------------------------------------------------------
+
+El patrón MTV es la arquitectura que utiliza Django para organizar el código de una aplicación web:
+- Model: representa la estructura de los datos (tablas de base de datos).
+- Template: es el diseño o presentación visual, es decir, el HTML que ve el usuario.
+- View: contiene la lógica de negocio, procesa las solicitudes del usuario y devuelve una respuesta.
+
+Comparación con MVC:
+- En MVC, el 'Controller' maneja la lógica; en Django, esa función la cumple la 'View'.
+- En Django, el 'Template' cumple el rol de la 'View' de MVC (lo que se muestra).
+- El 'Model' mantiene su función en ambos patrones.
+
+Cita sugerida: Django Software Foundation. (2024). Django at a glance. https://docs.djangoproject.com/en/5.2/intro/overview/
+
+¿Qué entendemos por app en Django?
+----------------------------------
+
+Una app en Django es una parte modular y reutilizable del proyecto que cumple una funcionalidad específica. Por ejemplo, una app puede encargarse del blog, otra del sistema de autenticación, y otra de la galería de fotos. Un proyecto Django puede contener múltiples apps.
+
+Cita sugerida: Django Software Foundation. (2024). Writing your first Django app. https://docs.djangoproject.com/en/5.2/intro/tutorial01/
+
+¿Qué es el flujo request-response en Django?
+--------------------------------------------
+
+El flujo request-response se refiere al proceso mediante el cual un usuario hace una solicitud (request) al servidor (por ejemplo, al ingresar una URL), y Django procesa esa solicitud utilizando una vista (view), accede a los modelos si es necesario, y devuelve una respuesta (response), generalmente una página HTML generada por una plantilla (template).
+
+¿Qué es el concepto de ORM (Object-Relational Mapping)?
+-------------------------------------------------------
+
+El ORM es un sistema que permite interactuar con bases de datos usando objetos de Python en lugar de escribir directamente SQL. En Django, cada modelo (class) representa una tabla en la base de datos, y cada instancia de ese modelo representa una fila. Esto permite trabajar con datos de forma más intuitiva y segura.
+
+¿Qué son los templates en Django?
+----------------------------------
+
+Los templates son archivos (normalmente en HTML) que definen la estructura de las páginas web que se muestran al usuario. Pueden contener etiquetas especiales del lenguaje de plantillas de Django que permiten insertar contenido dinámico, como variables, estructuras de control (condicionales, bucles), y herencia de plantillas.
+
+¿Cómo se instala Django?
+-------------------------
+
+Para instalar Django, primero se recomienda crear un entorno virtual en Python para el proyecto, y luego ejecutar el siguiente comando en la terminal:
+pip install django
+
+Se puede verificar la instalación con:
+django-admin --version
+
+Cita sugerida: Django Software Foundation. (2024). Installing Django. https://docs.djangoproject.com/en/5.2/intro/install/
+
+REFERENCIAS
+===========
+
+Django Software Foundation. (2024). Django at a glance. https://docs.djangoproject.com/en/5.2/intro/overview/
+Django Software Foundation. (2024). Writing your first Django app. https://docs.djangoproject.com/en/5.2/intro/tutorial01/
+Django Software Foundation. (2024). Installing Django. https://docs.djangoproject.com/en/5.2/intro/install/
